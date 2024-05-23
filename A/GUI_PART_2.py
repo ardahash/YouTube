@@ -178,7 +178,7 @@ rtm_page = Frame(root, bg="#262626")
 
 
 #root page
-my_label = Label(root, text="Best AV in the world", font=("Helvetica", 60, "bold"), bg="#262626", fg="white")
+my_label = Label(root, text="HURBAS ANTI VIRUS", font=("Helvetica", 60, "bold"), bg="#262626", fg="white")
 my_label.pack(pady=10)
 
 rtm_notif_on_root.pack()

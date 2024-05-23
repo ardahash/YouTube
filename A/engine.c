@@ -118,7 +118,7 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    const char directory_path[] = "C:/Users/mjank/Documents/MalDev/Antivirus/rules";
+    const char directory_path[] = "F:/unityu/Youtube/A/rules";
     char* file_path = argv[1];
 
     //debugger settings:

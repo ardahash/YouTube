@@ -30,7 +30,7 @@ void CallDetectionEngine(const char* filePath) {
 
 	// Construct the command to execute, including the file path and the parameter
 	char command[1024];
-	sprintf(command, "C:/Users/mjank/Documents/MalDev/Antivirus/engine/x64/Debug/engine.exe \"%s\"", filePath);
+	sprintf(command, "F:/unityu/YouTube/A/engine.exe \"%s\"", filePath);
 
 	// Execute the command using system()
 	int returnCode = system(command);
@@ -112,14 +112,14 @@ int main(int argc, char* argv[]) {
 	//unsigned char *pathList = argv[1];
 
 	//for debugging
-	unsigned char pathList[] = "C:\\Users\\mjank\\Desktop;";
+	unsigned char pathList[] = "F:\\unityu\\Youtube\\A;";
 
 
 	char *token;
 	token = strtok(pathList, ";");
 
 	while (token != NULL) {
-		HANDLE hThread = CreateThread(NULL, 0, MonitorDirectoryThread, token, 0, NULL);
+		HANDLE hThread = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)MonitorDirectoryThread, token, 0, NULL);
 		if (hThread == NULL) {
 			printf("Failed to create thread for directory monitoring\n");
 			return 1;

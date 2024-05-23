@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        ".fantomasignore": "ignore",
+        "windows.h": "c",
+        "dirent.h": "c",
+        "yara.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "compiler.h": "c",
+        "strutils.h": "c"
+    }
+}

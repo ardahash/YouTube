@@ -103,7 +103,7 @@ def toggle_win():
     
     
     global menu_close
-    tmp_pic = Image.open("images/menu_close.png")
+    tmp_pic = Image.open("A/images/menu_close.png")
     resized_tmp_pic = tmp_pic.resize((50, 50), Image.LANCZOS)
     menu_close = ImageTk.PhotoImage(resized_tmp_pic)
 

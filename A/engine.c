@@ -59,7 +59,7 @@ int scanCallback(
 
 void scanFile(const char* filePath, YR_RULES* rules) {
 
-    yr_rules_scan_file(rules, filePath, SCAN_FLAGS_REPORT_RULES_MATCHING, scanCallback, NULL, NULL);
+    yr_rules_scan_file(rules, filePath, SCAN_FLAGS_REPORT_RULES_MATCHING, (YR_CALLBACK_FUNC)scanCallback, NULL, NULL);
 
 }
 
